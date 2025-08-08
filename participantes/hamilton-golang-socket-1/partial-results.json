@@ -1,12 +1,12 @@
 {
   "participante": "hamilton-golang-socket-1",
-  "total_liquido": 256493.58750002243,
+  "total_liquido": 259660.17500002272,
   "total_bruto": 333325.00000002916,
   "total_taxas": 16666.25000000146,
   "descricao": "'total_liquido' é sua pontuação final. Equivale ao seu lucro. Fórmula: total_liquido + (total_liquido * p99.bonus) - (total_liquido * multa.porcentagem)",
   "p99": {
-    "valor": "2.79ms",
-    "bonus": "16%",
+    "valor": "2.7ms",
+    "bonus": "17%",
     "max_requests": "550",
     "descricao": "Fórmula para o bônus: max((11 - p99.valor) * 0.02, 0)"
   },
@@ -14,7 +14,7 @@
     "porcentagem": 0.35,
     "total": 110830.56250000969,
     "composicao": {
-      "num_inconsistencias": 2,
+      "num_inconsistencias": 1,
       "descricao": "Se 'num_inconsistencias' > 0, há multa de 35%."
     }
   },

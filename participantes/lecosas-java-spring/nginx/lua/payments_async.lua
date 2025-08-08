@@ -14,7 +14,6 @@ local function async_post(premature, rawBody)
 
     local decodedBody = cjson.decode(rawBody)
 
-
     local backends = {
         "http://backend-01:8080/payments/" .. tostring(decodedBody.amount),
         "http://backend-02:8080/payments/" .. tostring(decodedBody.amount)
@@ -29,7 +28,7 @@ local function async_post(premature, rawBody)
         keepalive_pool = 1000,
     })
 
-    ngx.sleep(0.001)
+    ngx.sleep(0.0005)
 end
 
 ngx.timer.at(0, async_post, body)
